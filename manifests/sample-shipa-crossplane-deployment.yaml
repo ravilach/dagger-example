@@ -1,0 +1,8 @@
+apiVersion: shipa.crossplane.io/v1alpha1
+kind: AppDeploy
+metadata:
+  name: deploy-of-some-app
+spec:
+  forProvider:
+    app: cp-deployed-app
+    image: "public.ecr.aws/j7f8d3t2/todoapp"
